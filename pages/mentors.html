@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Mentors | Med Clarivo+ NEET Mentorship</title>
+  <meta name="description" content="Meet our 50+ verified MBBS mentors from AIIMS, JIPMER, GMC and top medical colleges. Filter by subject, availability, and book your session."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><div class="logo-icon">🏥</div><span class="logo-text">Med Clarivo<span class="logo-plus">+</span></span></a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a><a href="mentors.html" class="active">Mentors</a>
+      <a href="results.html">Results</a><a href="pricing.html">Pricing</a>
+      <a href="blog.html">Blog</a><a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="student-login.html" class="btn btn-outline btn-sm">Login</a>
+      <a href="https://wa.me/919876543210" class="btn btn-primary btn-sm" target="_blank">📞 Free Call</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">🏠 Home</a><a href="mentors.html">👨‍⚕️ Mentors</a>
+  <a href="results.html">🏆 Results</a><a href="pricing.html">💰 Pricing</a>
+  <a href="blog.html">📝 Blog</a><a href="about.html">ℹ️ About</a>
+  <div class="mobile-cta">
+    <a href="student-login.html" class="btn btn-outline btn-full">Login</a>
+    <a href="https://wa.me/919876543210" class="btn btn-primary btn-full" target="_blank">Book Free Call</a>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a><span>›</span><span>Mentors</span></div>
+    <div class="section-badge" style="margin:0 auto 16px">50+ Verified Mentors</div>
+    <h1>Meet Your <span class="gradient-text">NEET Mentors</span></h1>
+    <p>MBBS students from India's top medical colleges ready to guide you to NEET success.</p>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg)">
+  <div class="container">
+    <!-- Search + Filters -->
+    <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:32px">
+      <div class="search-wrapper" style="flex:1;min-width:240px">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="mentorSearch" placeholder="Search by name or subject..." class="form-input" style="padding-left:44px"/>
+      </div>
+    </div>
+    <div style="margin-bottom:12px"><strong style="font-size:0.85rem;color:var(--gray)">Filter by Subject:</strong></div>
+    <div class="filter-bar" id="subjectFilters">
+      <button class="filter-pill active" data-filter="all" data-filter-group="subject">All Subjects</button>
+      <button class="filter-pill" data-filter="biology" data-filter-group="subject">🧬 Biology</button>
+      <button class="filter-pill" data-filter="physics" data-filter-group="subject">⚡ Physics</button>
+      <button class="filter-pill" data-filter="chemistry" data-filter-group="subject">⚗️ Chemistry</button>
+      <button class="filter-pill" data-filter="all-subjects" data-filter-group="subject">📚 All Subjects</button>
+    </div>
+    <div style="margin-bottom:12px"><strong style="font-size:0.85rem;color:var(--gray)">Filter by Target Year:</strong></div>
+    <div class="filter-bar" style="margin-bottom:40px">
+      <button class="filter-pill active" data-filter="all" data-filter-group="year">All Years</button>
+      <button class="filter-pill" data-filter="2025" data-filter-group="year">NEET 2025</button>
+      <button class="filter-pill" data-filter="2026" data-filter-group="year">NEET 2026</button>
+      <button class="filter-pill" data-filter="2027" data-filter-group="year">NEET 2027</button>
+    </div>
+
+    <div class="mentors-grid" id="mentorsGrid">
+      <!-- Mentor Cards -->
+      <div class="mentor-card" data-mentor data-subject="biology" data-year="2026" data-name="Dr. Ananya Singh">
+        <div class="mentor-card-header"></div>
+        <div class="mentor-avatar">A</div>
+        <div class="mentor-card-body">
+          <div class="mentor-name">Dr. Ananya Singh</div>
+          <div class="mentor-college">🏥 AIIMS New Delhi</div>
+          <div class="mentor-subject">Biology</div>
+          <p class="mentor-bio">NEET 2023 — 695/720. High-yield Biology strategy specialist. NCERT expert with genetics shortcuts that help students score 175+ in Bio.</p>
+          <div class="mentor-stats">
+            <div class="mentor-stat"><div class="val">85</div><div class="key">Students</div></div>
+            <div class="mentor-stat"><div class="val">⭐4.9</div><div class="key">Rating</div></div>
+            <div class="mentor-stat"><div class="val">2yr</div><div class="key">Exp</div></div>
+          </div>
+          <div class="mentor-card-footer">
+            <span class="avail-badge">Available</span>
+            <a href="https://wa.me/919876543210?text=I want to book with Dr. Ananya Singh" class="btn btn-primary btn-sm" style="margin-left:auto" target="_blank">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-card" data-mentor data-subject="physics" data-year="2026" data-name="Rohan Mehta">
+        <div class="mentor-card-header" style="background:linear-gradient(135deg,#7c3aed,#2563eb)"></div>
+        <div class="mentor-avatar" style="background:linear-gradient(135deg,#ede9fe,#e0e7ff);color:#7c3aed">R</div>
+        <div class="mentor-card-body">
+          <div class="mentor-name">Rohan Mehta</div>
+          <div class="mentor-college">🏥 GMC Mumbai</div>
+          <div class="mentor-subject">Physics</div>
+          <p class="mentor-bio">NEET 2022 — 672/720. Physics wizard. Makes mechanics, electrostatics & optics simple. Students consistently score 150+ in Physics.</p>
+          <div class="mentor-stats">
+            <div class="mentor-stat"><div class="val">120</div><div class="key">Students</div></div>
+            <div class="mentor-stat"><div class="val">⭐4.8</div><div class="key">Rating</div></div>
+            <div class="mentor-stat"><div class="val">3yr</div><div class="key">Exp</div></div>
+          </div>
+          <div class="mentor-card-footer">
+            <span class="avail-badge">Available</span>
+            <a href="https://wa.me/919876543210?text=I want to book with Rohan Mehta" class="btn btn-primary btn-sm" style="margin-left:auto" target="_blank">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-card" data-mentor data-subject="chemistry" data-year="2026" data-name="Priya Nair">
+        <div class="mentor-card-header" style="background:linear-gradient(135deg,#06b6d4,#10b981)"></div>
+        <div class="mentor-avatar" style="background:linear-gradient(135deg,#ecfeff,#d1fae5);color:#06b6d4">P</div>
+        <div class="mentor-card-body">
+          <div class="mentor-name">Priya Nair</div>
+          <div class="mentor-college">🏥 JIPMER Puducherry</div>
+          <div class="mentor-subject">Chemistry</div>
+          <p class="mentor-bio">NEET 2023 — 681/720. Chemistry expert. Organic reactions and inorganic tricks that save time. Known for making Chem scores jump 40+ marks.</p>
+          <div class="mentor-stats">
+            <div class="mentor-stat"><div class="val">95</div><div class="key">Students</div></div>
+            <div class="mentor-stat"><div class="val">⭐4.9</div><div class="key">Rating</div></div>
+            <div class="mentor-stat"><div class="val">2yr</div><div class="key">Exp</div></div>
+          </div>
+          <div class="mentor-card-footer">
+            <span class="avail-badge">Available</span>
+            <a href="https://wa.me/919876543210?text=I want to book with Priya Nair" class="btn btn-primary btn-sm" style="margin-left:auto" target="_blank">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-card" data-mentor data-subject="all-subjects" data-year="2025" data-name="Vikram Sharma">
+        <div class="mentor-card-header" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"></div>
+        <div class="mentor-avatar" style="background:linear-gradient(135deg,#fef3c7,#fee2e2);color:#f59e0b">V</div>
+        <div class="mentor-card-body">
+          <div class="mentor-name">Vikram Sharma</div>
+          <div class="mentor-college">🏥 AIIMS Jodhpur</div>
+          <div class="mentor-subject">All Subjects</div>
+          <p class="mentor-bio">NEET 2021 — 703/720. Rank 234 AIR. Comprehensive guide for all three subjects. Specialises in dropper students and 2nd/3rd attempt strategies.</p>
+          <div class="mentor-stats">
+            <div class="mentor-stat"><div class="val">200</div><div class="key">Students</div></div>
+            <div class="mentor-stat"><div class="val">⭐5.0</div><div class="key">Rating</div></div>
+            <div class="mentor-stat"><div class="val">4yr</div><div class="key">Exp</div></div>
+          </div>
+          <div class="mentor-card-footer">
+            <span class="avail-badge" style="color:#f59e0b">Filling Fast</span>
+            <a href="https://wa.me/919876543210?text=I want to book with Vikram Sharma" class="btn btn-primary btn-sm" style="margin-left:auto" target="_blank">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-card" data-mentor data-subject="biology" data-year="2025" data-name="Zara Khan">
+        <div class="mentor-card-header" style="background:linear-gradient(135deg,#10b981,#059669)"></div>
+        <div class="mentor-avatar" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);color:#10b981">Z</div>
+        <div class="mentor-card-body">
+          <div class="mentor-name">Zara Khan</div>
+          <div class="mentor-college">🏥 KMC Manipal</div>
+          <div class="mentor-subject">Biology</div>
+          <p class="mentor-bio">NEET 2024 — 660/720. Botany and Zoology expert with a focus on making diagrams and classification easy to remember with unique mnemonics.</p>
+          <div class="mentor-stats">
+            <div class="mentor-stat"><div class="val">60</div><div class="key">Students</div></div>
+            <div class="mentor-stat"><div class="val">⭐4.8</div><div class="key">Rating</div></div>
+            <div class="mentor-stat"><div class="val">1yr</div><div class="key">Exp</div></div>
+          </div>
+          <div class="mentor-card-footer">
+            <span class="avail-badge">Available</span>
+            <a href="https://wa.me/919876543210?text=I want to book with Zara Khan" class="btn btn-primary btn-sm" style="margin-left:auto" target="_blank">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-card" data-mentor data-subject="physics" data-year="2027" data-name="Aditya Kumar">
+        <div class="mentor-card-header" style="background:linear-gradient(135deg,#3b82f6,#06b6d4)"></div>
+        <div class="mentor-avatar" style="background:linear-gradient(135deg,#dbeafe,#cffafe);color:#3b82f6">Ad</div>
+        <div class="mentor-card-body">
+          <div class="mentor-name">Aditya Kumar</div>
+          <div class="mentor-college">🏥 MAMC New Delhi</div>
+          <div class="mentor-subject">Physics</div>
+          <p class="mentor-bio">NEET 2023 — 658/720. Modern Physics and thermodynamics expert. Helps Class 11 students build strong foundations before Class 12 ramp-up.</p>
+          <div class="mentor-stats">
+            <div class="mentor-stat"><div class="val">72</div><div class="key">Students</div></div>
+            <div class="mentor-stat"><div class="val">⭐4.7</div><div class="key">Rating</div></div>
+            <div class="mentor-stat"><div class="val">2yr</div><div class="key">Exp</div></div>
+          </div>
+          <div class="mentor-card-footer">
+            <span class="avail-badge">Available</span>
+            <a href="https://wa.me/919876543210?text=I want to book with Aditya Kumar" class="btn btn-primary btn-sm" style="margin-left:auto" target="_blank">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:48px;padding:40px;background:linear-gradient(135deg,rgba(37,99,235,0.05),rgba(124,58,237,0.05));border-radius:20px;border:1px solid var(--border)">
+      <h3 style="margin-bottom:12px">Want to See More Mentors?</h3>
+      <p style="color:var(--gray);margin-bottom:24px">We have 50+ mentors across all subjects. Tell us your needs and we'll match you with the perfect mentor.</p>
+      <a href="https://wa.me/919876543210?text=Hi! I want to find the right NEET mentor for me. Please help." class="btn btn-primary" target="_blank">💬 Get Matched on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container cta-inner">
+    <h2>Can't Decide? Let Us Match You!</h2>
+    <p>Answer 3 quick questions and we'll find the perfect mentor for your NEET journey.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/919876543210?text=Hi! Help me find the right NEET mentor." class="btn btn-ghost btn-lg" target="_blank">📱 Get Free Mentor Match</a>
+      <a href="pricing.html" class="btn btn-lg" style="background:white;color:var(--primary)">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><div class="logo-icon">🏥</div>Med Clarivo+</div><p>India's most trusted NEET mentorship platform.</p></div>
+      <div class="footer-col"><h4>Platform</h4><ul><li><a href="mentors.html">Mentors</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="results.html">Results</a></li></ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul><li><a href="blog.html">Blog</a></li><li><a href="neet-2026.html">NEET 2026</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="become-mentor.html">Become Mentor</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Med Clarivo+. All rights reserved.</p></div>
+  </div>
+</footer>
+<a href="https://wa.me/919876543210" class="wa-float" target="_blank">💬<span class="wa-float-tooltip">Chat with us!</span></a>
+<script src="../script.js"></script>
+</body>
+</html>
